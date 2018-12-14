@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <preference for="WebShopApps\MatrixRate\Model\Carrier\Matrixrate" type="Peasoup\MatrixRatesExtension\Model\Carrier\Matrixratemodified" />
+    <preference for="WebShopApps\MatrixRate\Model\ResourceModel\Carrier\Matrixrate" type="Peasoup\MatrixRatesExtension\Model\ResourceModel\Carrier\Matrixratemodified" />
+    <preference for="WebShopApps\MatrixRate\Block\Adminhtml\Carrier\Matrixrate\Grid" type="Peasoup\MatrixRatesExtension\Block\Adminhtml\Carrier\Matrixrate\GridExtended" />
+</config>
