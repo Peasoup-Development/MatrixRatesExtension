@@ -1,11 +1,11 @@
 <?php
 
-namespace Peasoup\MatrixRatesExtension\Model\Carrier;
+namespace Peasoup\Matrixratesextension\Model\Carrier;
 
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Quote\Model\Quote\Address\RateRequest;
 
-class MatrixRateModified extends \WebShopApps\MatrixRate\Model\Carrier\Matrixrate implements    \Magento\Shipping\Model\Carrier\CarrierInterface
+class Matrixratemodified extends \WebShopApps\MatrixRate\Model\Carrier\Matrixrate implements    \Magento\Shipping\Model\Carrier\CarrierInterface
 {
 
     /**
@@ -16,6 +16,7 @@ class MatrixRateModified extends \WebShopApps\MatrixRate\Model\Carrier\Matrixrat
      */
     public function getCode($type, $code = '')
     {
+
         $codes = [
             'condition_name' => [
                 'package_weight' => __('Weight vs. Destination'),

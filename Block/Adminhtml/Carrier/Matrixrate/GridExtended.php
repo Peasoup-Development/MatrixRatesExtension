@@ -1,6 +1,6 @@
 <?php
 
-namespace Peasoup\MatrixRatesExtension\Block\Adminhtml\Carrier\Matrixrate;
+namespace Peasoup\Matrixratesextension\Block\Adminhtml\Carrier\Matrixrate;
 
 class GridExtended extends \WebShopApps\MatrixRate\Block\Adminhtml\Carrier\Matrixrate\Grid
 {
@@ -12,6 +12,7 @@ class GridExtended extends \WebShopApps\MatrixRate\Block\Adminhtml\Carrier\Matri
      */
     protected function _prepareColumns()
     {
+
         parent::_prepareColumns();
 
         $this->addColumn(

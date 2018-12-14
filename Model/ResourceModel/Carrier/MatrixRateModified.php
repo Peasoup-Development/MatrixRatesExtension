@@ -32,7 +32,7 @@
  * See COPYING.txt for license details.
  */
 
-namespace Peasoup\MatrixRatesExtension\Model\ResourceModel\Carrier;
+namespace Peasoup\Matrixratesextension\Model\ResourceModel\Carrier;
 
 use Magento\Framework\Filesystem;
 use Magento\Framework\Filesystem\DirectoryList;
@@ -179,6 +179,7 @@ class Matrixratemodified extends \Magento\Framework\Model\ResourceModel\Db\Abstr
         $this->regionCollectionFactory = $regionCollectionFactory;
         $this->readFactory = $readFactory;
         $this->filesystem = $filesystem;
+
     }
 
     /**
@@ -287,7 +288,7 @@ class Matrixratemodified extends \Magento\Framework\Model\ResourceModel\Db\Abstr
 
             if($request->getConditionMRName() =='package_weight_price') {
 
-     //       echo "Weight---". $request->getPackageWeight()." price---".$request->getPackageValue();
+                //       echo "Weight---". $request->getPackageWeight()." price---".$request->getPackageValue();
 
                 $bind[':website_id'] = (int)$request->getWebsiteId();
                 $bind[':condition_name'] = $request->getConditionMRName();
@@ -301,8 +302,8 @@ class Matrixratemodified extends \Magento\Framework\Model\ResourceModel\Db\Abstr
 
 
 
-               $select->where('condition2_from_value < :condition2_value');
-              $select->where('condition2_to_value >= :condition2_value');
+                $select->where('condition2_from_value < :condition2_value');
+                $select->where('condition2_to_value >= :condition2_value');
             }
             else {
 

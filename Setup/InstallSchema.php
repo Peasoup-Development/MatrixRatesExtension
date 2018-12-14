@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Peasoup\MatrixRatesExtension\Setup;
+namespace Peasoup\Matrixratesextension\Setup;
 
 use Magento\Framework\Setup\InstallSchemaInterface;
 use Magento\Framework\Setup\ModuleContextInterface;
