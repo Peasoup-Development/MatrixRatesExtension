@@ -28,7 +28,7 @@
       "registration.php"
     ],
     "psr-4": {
-      "Peasoup\\MatrixRatesExtension\\": ""
+      "Peasoup\\Matrixratesextension\\": ""
     }
   }
 }
